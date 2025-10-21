@@ -2,9 +2,10 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using UnityEngine;
 
-public class MIDIInterpereter : MonoBehaviour
+public class MIDIValidator : MonoBehaviour
 {
 
     public string filePath;

@@ -350,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278647130}
   - component: {fileID: 1278647129}
+  - component: {fileID: 1278647131}
   m_Layer: 0
   m_Name: File Manager
   m_TagString: Untagged
@@ -369,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b88236a2e640441bb11f19ec815780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  filePath: C:\Users\User\Documents\GitHub\szakdolgozat\Szakdolgozat\Assets\PrototypeFiles\back_in_the_ussr.mid
+  filePath: C:\Users\User\Documents\GitHub\szakdolgozat\Szakdolgozat\Assets\PrototypeFiles\back_in_the_ussr_solo.mid
 --- !u!4 &1278647130
 Transform:
   m_ObjectHideFlags: 0
@@ -385,6 +386,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278647131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278647128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dcd68dc7d4285c439747c860ff9ed68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  midiFile: {fileID: 4900000, guid: cf722f13a7a8c0e48a791c8e23e1badc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
