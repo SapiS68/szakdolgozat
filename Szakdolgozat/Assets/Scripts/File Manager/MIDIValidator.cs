@@ -45,6 +45,10 @@ public class MIDIValidator : MonoBehaviour
                     hex.Add(DectoHex(buffer[i]));
                     Debug.Log(hex[i]);
                 }
+                if (hex[9] != "0")
+                {
+                    Debug.LogWarning("Multitrack MIDI detected! May cause errors!");
+                }
             }
             catch (System.Exception e)
             {

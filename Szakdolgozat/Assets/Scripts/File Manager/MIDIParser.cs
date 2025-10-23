@@ -4,6 +4,7 @@ using NUnit.Framework;
 using Melanchall.DryWetMidi.Interaction;
 using System.Collections.Generic;
 using System.IO;
+using Melanchall.DryWetMidi.Tools;
 
 public class MIDIParser : MonoBehaviour
 {
@@ -13,10 +14,6 @@ public class MIDIParser : MonoBehaviour
     void Start()
     {
         ParseMidi();
-        foreach (var note in notes)
-        {
-            Debug.Log(note);
-        }
     }
 
     // Update is called once per frame
@@ -45,6 +42,7 @@ public class MIDIParser : MonoBehaviour
 
         foreach (var note in mf.GetNotes())
         {
+            
             MidiNote midiNote = new MidiNote();
             midiNote.NoteNumber = note.NoteNumber;
             midiNote.NoteStartTime = (float)note.TimeAs<MetricTimeSpan>(tempoMap).TotalSeconds;
